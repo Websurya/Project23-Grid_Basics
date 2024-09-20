@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(59, 48, 69);
+    padding: 10px;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+    gap: 5px;
+}
+div {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+}
+#item1, #item8 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+#item3, #item9{
+    grid-row: span 2;
+}
+#item4{
+    grid-row: span 3;
+}
+#item9{
+grid-column: span 2;
+}
